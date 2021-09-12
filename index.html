@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compactible" content="IE-edge">  <!-- Para que se adapte a todos los navegadores -->
+  	<meta name="viewport" content="width-device-width, initial-scale?1.0">
+  	<link rel="shortcut icon" type="imagw/x-icon" href="imgs/LetterM1.png"> <!-- DE ESTA MANERA LE PONGO UN ICONO A LA PÁGINA -->
+	<title>
+		SprintOne
+	</title>
+
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+
+
+
+</head>
+<body>
+
+<div id="container">
+		
+		<header><b> SPRINT ONE</b></header>
+		<nav id="navegacion">
+		  <ul>
+			  	<!--
+			    <li><a href="index.html"  ><b>Inicio</b></a></li>
+			    <li><a href="#"  ><b>Sobre nosotros</b></a></li>
+			    <li><a href="#"  ><b>Contacto</b></a></li>
+				-->
+
+			    <img id="logo" src="imgs/LetterM1.png" alt="Ensayo" width= 30px high= 10px >
+			    <button id="btn_registroDeUsuarios" > <b> <a href="registro.html"> Registrarse </a> </b></button>  
+		  </ul>
+		</nav>
+
+
+		<div class="clearfix"></div>
+	
+	<section id = "content">
+		<article class = "article">
+			<h2>Artículo 1 </h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+
+		<article class = "article">
+			<h2>Artículo 2 </h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+
+		<article class = "article">
+			<h2>Artículo 3 </h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+		
+	</section>
+
+	<!-- BARRA LATERAL -->
+	<aside>
+		<h2>Barra lateral</h2>
+		<form>
+			<input type="text" name="Ensayo1">
+			<input type="submit" value="Buscar" />
+		</form>
+	</aside>
+
+	<div class="clearfix"></div>
+
+	<!-- PIE DE PÁGINA -->
+	<footer>
+		Alejandro Pérez Ramírez
+	</footer>
+
+
+
+
+
+</div>		
+	
+	<div align="center"> 
+			<br> 
+          <h1>Dale clic a las imagenes! </h1>
+          <p>Extras para tener en cuenta para más adelante </p>
+          <br>
+          <button class="reproductor1"><img src="https://phantom-marca.unidadeditorial.es/b49257bc273e53832a8a0c23832d577c/resize/660/f/webp/assets/multimedia/imagenes/2021/05/12/16208494355539.jpg"></button>  
+          <audio src=""></audio> <!-- Este "src" vacio se pone para que solo suene el audio una sola vez y no cada vez que se preione -->
+          <script>
+              let boton1 = document.querySelector(".reproductor1")
+              let audioEtiqueta1 = document.querySelector("audio")
+
+              boton1.addEventListener("click", () => {
+                audioEtiqueta1.setAttribute("src", "imgs/sonido2.mp3")
+                audioEtiqueta1.play()   
+                console.log(`Reproduciendo: ${audioEtiqueta1.src}`)
+              })  
+          </script>
+
+          <br><br>
+          <button class="reproductor2"> <b>SILENCIAR REPRODUCCIÓN </b></button>
+          <audio src=""></audio>
+          <script>
+              let boton2 = document.querySelector(".reproductor2")
+              let audioEtiqueta2 = document.querySelector("audio")
+
+              boton2.addEventListener("click", () => {
+                audioEtiqueta2.setAttribute("src", "imgs/sonido1.mp3")
+                audioEtiqueta2.stop()
+                console.log(`Reproduciendo: ${audioEtiqueta2.src}`)
+              })
+          </script> 
+      </div>
+
+
+	<div id="final" align="center">
+		<br><br>
+		<!-- Para insertar multimedia como audio por ejemplo -->
+		<audio controls src="imgs/sonido1.mp3" alt="audio prueba"></audio>
+		<br><br>
+		
+
+		<a href="registro.html" target="blank"><img src=imgs/next.png alt="Página siguiente" width="100" height="100"></a>
+      <p>Next</p>
+		<br><br><br>
+
+		
+	</div>
+	
+
+</body>
+</html>
